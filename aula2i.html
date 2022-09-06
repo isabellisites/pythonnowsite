@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <title>Curso Pythonnow</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h1 class="logo">Pythonnow</h1>
+            <ul id="navbar-items">
+                <li><a href="site.html">Home</a></li>
+                <li><a href="intermediario.html">Aulas</a></li>
+                <li><a href="avancado.html">Próximo nível</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="showcase">
+        <div id="showcase-container">
+            <div class="conteiner">
+        
+                <header>
+                    <div class="antes">
+                        <button class="btn-antes">
+                            <a href="aula1i.html">Aula anterior</a>
+                        </button>
+                    </div>
+
+
+
+                    <div id="img">
+        
+                       <div class="btn">
+                           <div class="play"></div>
+                        </div>
+        
+                           <div class="clip">
+                               <video src="videos\teste.mp4" controls></video>
+                              <b class="close">Close</b>
+                           </div>
+                           
+
+
+                    <div class="depois">
+                            <button class="btn-antes">
+                                    <a href="aula3i.html">próxima aula</a>
+                                </button>
+                    </div>
+                    
+            </div>
+            <p>Aula 1</p>
+            <script>
+                let btn = document.querySelector('.btn');
+                let clip = document.querySelector('.clip');
+                let close = document.querySelector('.close');
+                let video = document.querySelector('video');
+        
+                btn.onclick = function(){
+                    btn.classList.add('active'); 
+                    clip.classList.add('active'); 
+                    video.play();
+                    video.currentTime = 0;
+                }
+                
+                close.onclick = function(){
+                    btn.classList.remove('active'); 
+                    clip.classList.remove('active'); 
+                    
+                    video.pause();
+                }
+                
+                
+            </script>
+        </div>
+    </header>
+
+    <!-- About -->
+    
+
+    
+
+
+           
+            
+
+    <footer id="footer">
+        <p>Copyright 2022 - Todos os direitos reservados.</p>
+        <p>Feito por Phitonnow.</p>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Our JS file -->
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
